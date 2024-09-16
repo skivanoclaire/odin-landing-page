@@ -107,12 +107,18 @@ h1 {
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
+    /* Allows items to wrap to new lines */
     justify-content: center;
     gap: 20px;
     /* Space between the images */
 }
 
 .image-item {
+    width: 200px;
+    /* Adjust to ensure a square layout */
+    height: 200px;
+    /* Adjust to ensure a square layout */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +127,9 @@ h1 {
 
 .image-item img {
     width: 100%;
-    max-width: 200px;
+    height: 100%;
+    object-fit: cover;
+    /* Crops the image and ensures it fits within the box */
     border-radius: 5px;
     /* Rounded rectangle */
     border: 2px solid lightblue;
@@ -132,4 +140,8 @@ h1 {
 .image-item p {
     font-size: 14px;
     color: #555;
+    word-wrap: break-word;
+    max-width: 100%;
+    /* Limits text width to the image width */
+    text-align: center;
 }
