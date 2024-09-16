@@ -39,7 +39,7 @@ header {
     text-decoration: underline;
 }
 
-/* New Section */
+/* First Section */
 .content-section {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,6 @@ h1 {
     font-size: 16px;
     margin-bottom: 30px;
     color: #b3b3cc;
-    /* Lower contrast */
 }
 
 .signup-button {
@@ -77,19 +76,60 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    /* Rounded corners */
 }
 
 .signup-button:hover {
     background-color: darkblue;
 }
 
-
 .image-content {
     flex: 1;
     text-align: center;
-    color: white;
-    font-size: 16px;
-    border: 2px dashed #cccccc;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+}
+
+/* Second Section */
+.image-gallery {
+    background-color: white;
     padding: 50px;
+    text-align: center;
+}
+
+.image-gallery h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between the images */
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 5px;
+    /* Rounded rectangle */
+    border: 2px solid lightblue;
+    /* Light blue border */
+    margin-bottom: 10px;
+}
+
+.image-item p {
+    font-size: 14px;
+    color: #555;
 }
